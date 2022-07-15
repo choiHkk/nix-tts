@@ -9,8 +9,7 @@
 7. conda 환경으로 진행해도 무방하지만 본 레포지토리에서는 docker 환경만 제공합니다. 기본적으로 ubuntu에 docker, nvidia-docker가 설치되었다고 가정합니다.
 8. GPU, CUDA 종류에 따라 Dockerfile 상단 torch image 수정이 필요할 수도 있습니다.
 9. 오픈소스에서 제공하는 영어 문장은 국제음성기호(ipa)를 사용하지만 본 레포지토리에서는 일반적인 한국어 전처리 기법을 사용합니다.
-10. single speaker 학습에 해당하는 train.py를 즉시 실행할 경우 에러가 발생합니다. 따라서 본 환경에서 실행할 경우 train_ms.py를 사용합니다.
-11. 별도의 pre-processing 과정은 필요하지 않습니다.
+10. 별도의 pre-processing 과정은 필요하지 않습니다.
 
 
 ## Dataset
