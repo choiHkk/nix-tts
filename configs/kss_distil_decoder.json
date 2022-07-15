@@ -1,0 +1,53 @@
+{
+    "train": {
+      "log_interval": 10,
+      "eval_interval": 1000,
+      "seed": 0,
+      "epochs": 10000,
+      "learning_rate": 2e-4,
+      "betas": [0.8, 0.99],
+      "eps": 1e-9,
+      "batch_size": 32,
+      "fp16_run": true,
+      "lr_decay": 0.999875,
+      "segment_size": 8192,
+      "init_lr_ratio": 1,
+      "warmup_epochs": 0,
+      "stft_loss_fft_sizes": [1024, 2048, 512],
+      "stft_loss_hop_sizes": [128, 256, 64],
+      "stft_win_lengths": [1024, 2048, 512]
+    },
+    "data": {
+      "encoder_model_dir": "logs/kss",
+      "encoder_model_config": "logs/kss/config_enc.json", 
+      "teacher_model_dir": "vits/logs/kss_v1", 
+      "teacher_model_config": "vits/logs/kss_v1/config.json", 
+      "training_files":"filelists/kss_audio_text_train_filelist.txt",
+      "validation_files":"filelists/kss_audio_text_val_filelist.txt",
+      "max_wav_value": 32768.0,
+      "sampling_rate": 22050,
+      "filter_length": 1024,
+      "hop_length": 256,
+      "win_length": 1024,
+      "n_mel_channels": 80,
+      "mel_fmin": 0.0,
+      "mel_fmax": 11025,
+      "add_blank": true,
+      "n_speakers": 1,
+      "cleaned_text": true
+    },
+    "model": {
+      "inter_channels": 192,
+      "resblock": "ds",
+      "resblock_kernel_sizes": [3,7,11],
+      "resblock_dilation_sizes": [[1,3,5], [1,3,5], [1,3,5]],
+      "upsample_rates": [8,8,2,2],
+      "upsample_initial_channel": 256,
+      "upsample_kernel_sizes": [16,16,4,4],
+      "use_spectral_norm": false, 
+      "temperature": 0.0005, 
+      "n_flows": 2, 
+      "max_len": 1024, 
+      "gin_channels": 256
+    }
+  }
