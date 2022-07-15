@@ -15,7 +15,7 @@
 ## Dataset
 1. download dataset - https://www.kaggle.com/datasets/bryanpark/korean-single-speaker-speech-dataset
 2. `unzip /path/to/the/kss.zip -d /path/to/the/kss`
-3. `mkdir /path/to/the/vits/data/dataset`
+3. `mkdir /path/to/the/nix-tts/data/dataset`
 4. `mv /path/to/the/kss.zip /path/to/the/nix-tts/data/dataset`
 
 ## Docker build
