@@ -11,6 +11,7 @@
 9. vits 오픈소스에서 제공하는 영어 문장은 국제음성기호(ipa)를 사용하지만 본 레포지토리에서는 일반적인 한국어 전처리 기법을 사용합니다.
 10. 별도의 pre-processing 과정은 필요하지 않습니다.
 11. Nix-TTS에서 제안하는 model parameters와 일치하지 않고 조금 더 작은 수치로 구현되었습니다. 
+12. 학습 단계에서 Nix-TTS에서 제안하는 Text Aligner를 사용하지만, 추론 단계에서는 Text Aligner를 사용하지 않습니다.
 
 ## Dataset
 1. download dataset - https://www.kaggle.com/datasets/bryanpark/korean-single-speaker-speech-dataset
