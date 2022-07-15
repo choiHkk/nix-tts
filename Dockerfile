@@ -1,4 +1,3 @@
-# for inference
 FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 
 COPY ./requirements.txt /tmp/requirements.txt
