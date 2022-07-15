@@ -33,8 +33,8 @@
 7. `python setup.py build_ext --inplace`
 8. `cd /home/work/nix-tts`
 9. `ln -s /path/to/the/nix-tts/data/dataset/kss`
-10. `python train_encoder.py -c ./config/kss_distil_encoder.json -m kss_v1 -g 0`
-11. `python train_decoder.py -c ./config/kss_distil_decoder.json -m kss_v1 -g 0`
+10. `python train_encoder.py -c ./config/kss_distil_encoder.json -m kss -g 0`
+11. `python train_decoder.py -c ./config/kss_distil_decoder.json -m kss -g 0`
 12. arguments
   * -c : comfig path
   * -m : model output directory
