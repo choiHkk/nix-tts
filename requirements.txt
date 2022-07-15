@@ -1,59 +1,33 @@
-easydict
-g2pk
-onnx
-onnxruntime-1.10.0
-umap-learn
-visdom
-webrtcvad
-numba
+
+# Cython==0.29.21
+# librosa==0.8.0
+# matplotlib==3.3.1
+# numpy==1.18.5
+# phonemizer==2.2.1
+# scipy==1.5.2
+# tensorboard==2.3.0
+# torch==1.6.0
+# torchvision==0.7.0
+# Unidecode==1.1.1
+
+
+
+tensorboardX
+librosa
 matplotlib
+numpy
 scipy
-sounddevice
+tqdm
 Unidecode
 inflect
-multiprocess
-bokeh
 jamo
-pydub
-kaldiio
-ipykernel
-starlette
-uvicorn
+pandas
 jpype1
 konlpy
-nvsmi
 jamotools
-pygsheets
 tweepy==3.10.0
 nltk
 pillow
-jupyterlab
-ptyprocess
-pyzmq
-lws
-setuptools==59.5.0
-anyascii
-coqpit
-gruut
-jieba
-pypinyin
-fsspec
-pyworld
-librosa
-wandb
-tensorboardX
-tensorboard
-soundfile
-numpy
 natsort
-tqdm
-phonemizer
-typeguard
-g2p_en
-pandas
-openpyxl
-nvidia-pyindex
-sox
-streamlit
-starlette==0.17.1
-gradio
+easydict
+g2pk
