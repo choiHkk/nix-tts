@@ -1,4 +1,5 @@
 ## Introduction
+### 본 레포지토리는 Nix-TTS unofficial pytorch 구현입니다.
 1. nix-tts를 구현하여 vits 오픈 소스와 함께 한국어 데이터셋(KSS)을 사용해 빠르게 학습합니다.
 2. KSS 데이터셋은 기본적으로 44kHz인 점을 감안하여 22kHz로 resampling할 수 있도록 utils.load_wav_to_torch()를 수정했습니다.
 3. data_utils.py 내부 get_audio method에는 spectrogram을 생성하고 저장한 뒤 다시 읽어오게끔 하는 부분이 있지만 해당 부분을 주석처리했습니다.
@@ -51,9 +52,8 @@
 
 
 ## Reference
-1. Nix-TTS: An Incredibly Lightweight End-to-End Text-to-Speech Model via Non End-to-End Distillation   https://arxiv.org/abs/2203.15643
-2. Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech   https://arxiv.org/abs/2106.06103
-3. SpeedySpeech: Efficient Neural Speech Synthesis   https://arxiv.org/abs/2008.03802
-4. RAD-TTS: Parallel Flow-Based TTS with Robust Alignment Learning and
-Diverse Synthesis   https://openreview.net/pdf?id=0NQwnnwAORi
-5. One TTS Alignment To Rule Them All   https://arxiv.org/pdf/2108.10447.pdf
+1. [Nix-TTS: An Incredibly Lightweight End-to-End Text-to-Speech Model via Non End-to-End Distillation](https://arxiv.org/abs/2203.15643)
+2. [Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech](https://arxiv.org/abs/2106.06103)
+3. [SpeedySpeech: Efficient Neural Speech Synthesis](https://arxiv.org/abs/2008.03802)
+4. [RAD-TTS: Parallel Flow-Based TTS with Robust Alignment Learning and Diverse Synthesis](https://openreview.net/pdf?id=0NQwnnwAORi)
+5. [One TTS Alignment To Rule Them All](https://arxiv.org/pdf/2108.10447.pdf)
