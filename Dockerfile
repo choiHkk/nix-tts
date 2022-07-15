@@ -33,7 +33,7 @@ RUN /bin/bash -c "bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy
 RUN pip install --upgrade tensorboard
 RUN pip install jupyter -U
 
-VOLUME /home/choihk
-WORKDIR /home/choihk
+VOLUME /home/work
+WORKDIR /home/work
 
 CMD ["/bin/bash"]
