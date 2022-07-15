@@ -40,6 +40,16 @@
   * -g : gpu number
 13. (OPTIONAL) `tensorboard --logdir=outdir/logdir`
 
+## Tensorboard losses
+![nix-tts-tensorboard-losses](https://user-images.githubusercontent.com/69423543/179240643-d0be3733-c19a-4f33-ae4a-1fa255ddd191.png)
+
+## Tensorboard alignment
+![nix-tts-tensorboard-alignment](https://user-images.githubusercontent.com/69423543/179240657-8090b2f0-1e16-43c6-9167-7e88141770e3.png)
+
+## Tensorboard mel-spectrograms
+![nix-tts-tensorboard-mels](https://user-images.githubusercontent.com/69423543/179240889-0d39f2a7-309a-4741-81fd-aa0f91203cc5.png)
+
+
 ## Reference
 1. Nix-TTS: An Incredibly Lightweight End-to-End Text-to-Speech Model via Non End-to-End Distillation   https://arxiv.org/abs/2203.15643
 2. Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech   https://arxiv.org/abs/2106.06103
