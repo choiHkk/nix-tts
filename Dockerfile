@@ -4,7 +4,7 @@ FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 COPY ./requirements.txt /tmp/requirements.txt
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Seoul
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+# RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <key>
 RUN apt-get update && \
     apt-get -y -qq update && \
     apt-get install -y apt-utils && \
